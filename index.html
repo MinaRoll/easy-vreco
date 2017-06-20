@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Easy Vreco</title>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<section>
+    	<div class="row">
+      		<div class="col-sm-12 col-md-12">
+        		<button id="encuentrame">Encuéntrame</button>
+				<input id="origen-input" class="controles" type="text" placeholder="Ingresa un punto de origen">
+        		<input id="destino-input" class="controles" type="text" placeholder="Ingresa un destino">
+		        <button id="ruta">Ruta</button>
+      		</div>
+	    </div>
+   
+		<div class="row">
+    		<div id="modo-seleccion" class="controles">
+    			<input type="radio" name="type" id="buscar-caminando" checked="checked">
+      			<label for="buscar-caminando">Caminando</label>
+				<input type="radio" name="type" id="buscar-tpublico">
+      			<label for="buscar-tpublico">Transporte público</label>
+			    <input type="radio" name="type" id="buscar-auto">
+      			<label for="buscar-auto">En auto</label>
+    		</div>
+    	</div>
+
+		<div class="row">
+			<div id="map" class="col-sm-12 col-md-12">
+			</div>
+		</div>
+	</section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7x7meW94BqhiGXypONeItytayIb9BRZk&libraries=places&callback=initMap" async defer></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/main.js"></script>
+</body>
+</html>
